@@ -38,6 +38,7 @@ type Issue struct {
 	Author       *IdName        `json:"author"`
 	FixedVersion *IdName        `json:"fixed_version"`
 	AssignedTo   *IdName        `json:"assigned_to"`
+	AssignedToId int            `json:"assigned_to_id"`
 	Category     *IdName        `json:"category"`
 	CategoryId   int            `json:"category_id"`
 	Notes        string         `json:"notes"`
@@ -48,6 +49,7 @@ type Issue struct {
 	ClosedOn     string         `json:"closed_on"`
 	CustomFields []*CustomField `json:"custom_fields,omitempty"`
 	Uploads      []*Upload      `json:"uploads"`
+	Estimated    float32         `json:"estimated_hours"`
 }
 
 type IssueFilter struct {
