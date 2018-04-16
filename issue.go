@@ -49,7 +49,7 @@ type Issue struct {
 	ClosedOn     string         `json:"closed_on"`
 	CustomFields []*CustomField `json:"custom_fields,omitempty"`
 	Uploads      []*Upload      `json:"uploads"`
-	Estimated    float32         `json:"estimated_hours"`
+	Estimated    string         `json:"estimated_hours"`
 }
 
 type IssueFilter struct {
